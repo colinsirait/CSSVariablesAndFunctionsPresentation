@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="demonstration.css">
+    <title>Document</title>
+</head>
+<body>
+    <p class="classname">Hello World</p>
+    <p class="classname2">Hello World Sequel</p>
+    <h1 class="classname3">Hello World Trilogy</h1>
+
+    <script>
+      var scriptTest = document.querySelector(':root');
+      
+      function changeCSSvariable() {
+          scriptTest.style.setProperty('--globalvariable', 'red');
+      }
+    </script>
+
+    <button type="button" onclick="changeCSSvariable()">
+      Change CSS Variable
+    </button>
+</body>
+</html>
